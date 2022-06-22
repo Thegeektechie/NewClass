@@ -84,6 +84,15 @@ foreach (string month in months)
 }
 
 
+
+Console.WriteLine("                     2 ");
+Console.WriteLine("  ");
+foreach (string month in months)
+{
+    Console.WriteLine(month);
+}
+
+
 Console.WriteLine("  ");
 Console.WriteLine("                     3 ");
 
