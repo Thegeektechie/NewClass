@@ -74,6 +74,15 @@ int TotalMonths = months.Length;
 Console.WriteLine("There are " + TotalMonths + " months in a year ");
 
 
+
+Console.WriteLine("                     2 ");
+Console.WriteLine("  ");
+foreach (string month in months)
+{
+    Console.WriteLine(month);
+}
+
+
 Console.WriteLine("  ");
 Console.WriteLine("                     3 ");
 
@@ -100,6 +109,13 @@ foreach (string reversedMonths in months)
 Console.WriteLine("                     4 ");
 Console.WriteLine("   ");
 
+Console.WriteLine("The list of months in alphabetically order ");
+Array.Sort(months);
+foreach (string sort in months)
+{
+    Console.WriteLine(sort);
+}
+
 
 Console.WriteLine("                     5 ");
 
@@ -114,5 +130,34 @@ foreach (string Initial6 in InitialHalf)
 }
 
 
-Console.WriteLine("                     4 ");
+Console.WriteLine("                     6 ");
 Console.WriteLine("   ");
+string[] cloneMonths = (string[])Months.Clone();
+foreach (string clone in cloneMonths)
+{
+    Console.WriteLine(clone);
+}
+
+Console.WriteLine("                     7 ");
+Console.WriteLine("   ");
+Console.WriteLine("About to clear the months");
+Console.WriteLine("Clearing...");
+Console.WriteLine("-------------------------------100%--------------------------");
+Array.Clear(months, 0, months.Length);
+foreach (string clear in months)
+{
+    Console.WriteLine(clear);
+}
+Console.WriteLine("Cleared");
+
+
+Console.WriteLine("                     8 ");
+Console.WriteLine("   ");
+
+
+string[] MonthS = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+Array.Clear(MonthS, 0, 6);
+foreach (string clear6 in MonthS)
+{
+    Console.WriteLine(clear6);
+}
